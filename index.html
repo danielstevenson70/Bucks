@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Milwaukee Bucks</title>
   <style>
+    
+@font-face {
+  font-family: 'BucksBlock';
+  src: url('./fonts/BucksBlock.ttf') format('truetype');
+}
+
     * {
       margin: 0;
       padding: 0;
@@ -23,13 +29,21 @@
       margin-bottom: 40px;
     }
 
-    .header h1 {
-      color: #EEE1C6;
-      font-size: 3rem;
+    .bucks-header {
+      font-family: 'BucksBlock', sans-serif;
+      font-size: 48px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      letter-spacing: 4px;
-    }
+      font-weight: 700;
+      letter-spacing: 0.15em;
+    }   
 
+    .player-image-buck img {
+      display: center;
+      width: 70%;
+      height: 80%;
+      object-fit: auto;
+    }
     .cards-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -231,10 +245,12 @@
 </head>
 <body>
   <header class="header">
-    <div class="player-image">
-          <img src="public/buck.png" alt="Buck">
+    <div class="player-image-buck">
+          <img src="/bucksimage.png" alt="Buck">
       </div>
-    <h1>Milwaukee Bucks</h1>
+
+    <h1 class="bucks-header">MILWAUKEE BUCKS</h1>
+
   </header>
 
   <div class="cards-container">
@@ -625,32 +641,32 @@
       </div>
     </div>
 
-  <!-- Player Card 7 - Cole -->
+  <!-- Player Card 7 - Ousmane Dieng -->
     <div class="card-container" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
         <!-- Front -->
         <div class="card-front">
           <div class="card-header">2025-26 SEASON</div>
           <div class="player-image">
-            <img src="/coleanthony.jpg" alt="cole">
+            <img src="/ouse.webp" alt="ousmane">
           </div>
-          <div class="player-name">Cole Anthony</div>
+          <div class="player-name">Ousmane Dieng</div>
           <div class="player-number">#50</div>
           <div class="player-stats">
             <div class="stat">
-              <div class="stat-value">6.5</div>
+              <div class="stat-value">3.7</div>
               <div class="stat-label">PPG</div>
             </div>
             <div class="stat">
-              <div class="stat-value">2.6</div>
+              <div class="stat-value">1.6</div>
               <div class="stat-label">RPG</div>
             </div>
             <div class="stat">
-              <div class="stat-value">3.7</div>
+              <div class="stat-value">1.0</div>
               <div class="stat-label">APG</div>
             </div>
             <div class="stat">
-              <div class="stat-value">42.8%</div>
+              <div class="stat-value">41.8%</div>
               <div class="stat-label">FG%</div>
             </div>
           </div>
@@ -662,11 +678,11 @@
           <div class="player-info">
             <div class="info-row">
               <span class="info-label">Position</span>
-              <span class="info-value">Guard</span>
+              <span class="info-value">Forward</span>
             </div>
             <div class="info-row">
               <span class="info-label">Height</span>
-              <span class="info-value">6'2"</span>
+              <span class="info-value">6'9"</span>
             </div>
             <div class="info-row">
               <span class="info-label">Weight</span>
@@ -678,7 +694,7 @@
             </div>
             <div class="info-row">
               <span class="info-label">Draft</span>
-              <span class="info-value">2020 - Pick 15</span>
+              <span class="info-value">2022 - Pick 11</span>
             </div>
           </div>
           <div class="flip-hint">← Click to flip back</div>
@@ -1174,32 +1190,32 @@
       </div>
     </div>
 
-    <!-- Player Card 16 - Amir -->
+    <!-- Player Card 16 - Nigel -->
     <div class="card-container" onclick="this.classList.toggle('flipped')">
       <div class="card-inner">
         <!-- Front -->
         <div class="card-front">
           <div class="card-header">2025-26 SEASON</div>
           <div class="player-image">
-            <img src="/coffey.webp" alt="amir">
+            <img src="/nigel.jpg" alt="nigel">
           </div>
-          <div class="player-name">Amir Coffey</div>
+          <div class="player-name">Nigel Hayes-Davis</div>
           <div class="player-number">#17</div>
           <div class="player-stats">
             <div class="stat">
-              <div class="stat-value">1.5</div>
+              <div class="stat-value">1.3</div>
               <div class="stat-label">PPG</div>
             </div>
             <div class="stat">
-              <div class="stat-value">0.7</div>
+              <div class="stat-value">1.2</div>
               <div class="stat-label">RPG</div>
             </div>
             <div class="stat">
-              <div class="stat-value">0.4</div>
+              <div class="stat-value">0.3</div>
               <div class="stat-label">APG</div>
             </div>
             <div class="stat">
-              <div class="stat-value">42.3%</div>
+              <div class="stat-value">32.6%</div>
               <div class="stat-label">FG%</div>
             </div>
           </div>
@@ -1211,7 +1227,7 @@
           <div class="player-info">
             <div class="info-row">
               <span class="info-label">Position</span>
-              <span class="info-value">Guard</span>
+              <span class="info-value">Forward</span>
             </div>
             <div class="info-row">
               <span class="info-label">Height</span>
@@ -1219,7 +1235,7 @@
             </div>
             <div class="info-row">
               <span class="info-label">Weight</span>
-              <span class="info-value">210 lbs</span>
+              <span class="info-value">254 lbs</span>
             </div>
             <div class="info-row">
               <span class="info-label">Country</span>
@@ -1227,7 +1243,7 @@
             </div>
             <div class="info-row">
               <span class="info-label">Draft</span>
-              <span class="info-value">2019</span>
+              <span class="info-value">2017</span>
             </div>
           </div>
           <div class="flip-hint">← Click to flip back</div>
